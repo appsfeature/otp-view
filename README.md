@@ -120,4 +120,11 @@ class MainActivity : AppCompatActivity() {
  }
 ```
 
+### Color Resources
+```xml
+    <color name="color_background_box">#F5F5F5</color>
+    <color name="color_background_box_stroke">#DEDEDE</color>
+    <color name="color_background_box_stroke_active">#A5A5A5</color>
+```
+
 
