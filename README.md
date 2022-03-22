@@ -25,12 +25,13 @@ dependencies {
 }
 ```
 
+### Screenshots
+<p align="center">
+    <img src="https://raw.githubusercontent.com/appsfeature/otp-view/master/screenshots/screenshot_1.png" alt="Preview 1" width="200" />
+    <img src="https://raw.githubusercontent.com/appsfeature/otp-view/master/screenshots/screenshot_2.png" alt="Preview 1" width="200" />
+</p>
 
 ### OTP-view Usage methods
-
-<p align="left">
-  <img src="https://raw.githubusercontent.com/appsfeature/otp-view/master/screenshots/screenshot_1.png" alt="Preview 1" width="200" />
-</p>
 
 ### OTP Box implementation changes in layout.xml file
 ```xml
@@ -53,11 +54,8 @@ dependencies {
         app:width="40dp" />
 ```
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/appsfeature/otp-view/master/screenshots/screenshot_2.png" alt="Preview 1" width="200" />
-</p>
 
-### Dash implementation changes in layout.xml file
+### Dash View implementation changes in layout.xml file
 ```xml
     <com.otpview.OTPTextView
         android:id="@+id/otp_view"
