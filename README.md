@@ -99,7 +99,7 @@ class MainActivity : AppCompatActivity() {
              }
 
              override fun onOTPComplete(otp: String) {
-                 Toast.makeText(this@SampleActivity1, "The OTP is $otp", Toast.LENGTH_SHORT).show()
+                 Toast.makeText(this@MainActivity, "The OTP is $otp", Toast.LENGTH_SHORT).show()
              }
          }
          errorButton.setOnClickListener { otpTextView.showError() }
