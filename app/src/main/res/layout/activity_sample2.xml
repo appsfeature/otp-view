@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:background="#FFFFFF"
+    android:gravity="center|top"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#292828"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
         tools:context=".MainActivity">
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:text="@string/verification_code"
-            android:textColor="#ffffff"
+            android:textColor="@android:color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -32,7 +32,7 @@
             android:lineSpacingExtra="4dp"
             android:text="@string/please_type_the_verification_code_sent_to_n_9xxxxxxx19"
             android:textAlignment="center"
-            android:textColor="#ffffff"
+            android:textColor="@android:color/darker_gray"
             android:layout_marginBottom="16dp"
             android:textSize="14sp"
             android:gravity="center_horizontal" />
@@ -41,20 +41,21 @@
             android:id="@+id/otp_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ffffff"
-            app:bar_active_color="@color/white"
+            android:textColor="@android:color/black"
             app:bar_enabled="true"
             app:bar_error_color="@color/red"
-            app:bar_height="1.5dp"
-            app:bar_inactive_color="#606060"
+            app:bar_active_color="@color/black"
+            app:bar_inactive_color="@android:color/darker_gray"
+            app:hide_otp_drawable="@drawable/bg_otp_box_hide"
+            app:bar_success_color="#33cc33"
             app:bar_margin_bottom="0dp"
             app:bar_margin_left="2dp"
             app:bar_margin_right="2dp"
-            app:bar_success_color="#33cc33"
+            app:bar_height="1.5dp"
             app:box_margin="0dp"
             app:height="40dp"
             app:hide_otp="true"
-            app:length="6"
+            app:length="4"
             app:otp=""
             app:otp_text_size="20dp"
             app:width="40dp" />
@@ -64,21 +65,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="8dp"
             android:background="@android:color/transparent"
             android:padding="12dp"
-            android:text="SHOW ERROR"
+            android:text="Show Error"
+            android:textAllCaps="false"
             android:textColor="@color/red" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
             android:background="@android:color/transparent"
             android:padding="12dp"
-            android:text="SHOW Success"
+            android:text="Show Success"
+            android:textAllCaps="false"
             android:textColor="#52AC84" />
 
     </LinearLayout>
