@@ -42,6 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@android:color/black"
+            app:otp_text_size="20dp"
             app:bar_enabled="true"
             app:bar_error_color="@color/red"
             app:bar_active_color="@color/black"
@@ -54,11 +55,10 @@
             app:bar_height="1.5dp"
             app:box_margin="0dp"
             app:height="40dp"
+            app:width="40dp"
             app:hide_otp="true"
             app:length="4"
-            app:otp=""
-            app:otp_text_size="20dp"
-            app:width="40dp" />
+            app:otp=""/>
 
         <Button
             android:id="@+id/button"

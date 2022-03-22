@@ -39,19 +39,20 @@ dependencies {
         android:id="@+id/otp_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#ffffff"
+        android:textColor="@android:color/black"
+        app:otp_text_size="20sp"
         app:otp_box_background="@drawable/bg_otp_box"
         app:otp_box_background_active="@drawable/bg_otp_box_active"
         app:otp_box_background_inactive="@drawable/bg_otp_box_inactive"
         app:otp_box_background_error="@drawable/bg_otp_box_error"
         app:otp_box_background_success="@drawable/bg_otp_box_success"
-        app:box_margin="0dp"
-        app:height="40dp"
+        app:hide_otp_drawable="@drawable/bg_otp_box_hide"
+        app:height="45dp"
+        app:width="40dp"
+        app:box_margin="6dp"
         app:hide_otp="false"
         app:length="6"
-        app:otp=""
-        app:otp_text_size="20dp"
-        app:width="40dp" />
+        app:otp=""/>
 ```
 
 
@@ -61,23 +62,24 @@ dependencies {
         android:id="@+id/otp_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#ffffff"
-        app:bar_active_color="@color/white"
+        android:textColor="@android:color/black"
+        app:otp_text_size="20dp"
         app:bar_enabled="true"
         app:bar_error_color="@color/red"
-        app:bar_height="1.5dp"
-        app:bar_inactive_color="#606060"
+        app:bar_active_color="@color/black"
+        app:bar_inactive_color="@android:color/darker_gray"
+        app:hide_otp_drawable="@drawable/bg_otp_box_hide"
+        app:bar_success_color="#33cc33"
         app:bar_margin_bottom="0dp"
         app:bar_margin_left="2dp"
         app:bar_margin_right="2dp"
-        app:bar_success_color="#33cc33"
+        app:bar_height="1.5dp"
         app:box_margin="0dp"
         app:height="40dp"
+        app:width="40dp"
         app:hide_otp="true"
-        app:length="6"
-        app:otp=""
-        app:otp_text_size="20dp"
-        app:width="40dp" />
+        app:length="4"
+        app:otp=""/>
 ```
 
 ### Activity class setup
