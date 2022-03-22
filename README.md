@@ -83,27 +83,41 @@ dependencies {
 ### Activity class setup
 ```java
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sample1)
+     private lateinit var otpTextView : OTPTextView
 
-        val errorButton = findViewById<Button>(R.id.button)
-        val successButton = findViewById<Button>(R.id.button2)
-        val otpTextView = findViewById(R.id.otp_view) as OTPTextView
-        otpTextView.requestFocusOTP()
-        otpTextView.otpListener = object : OTPListener {
-            override fun onInteractionListener() {
+     override fun onCreate(savedInstanceState: Bundle?) {
+         super.onCreate(savedInstanceState)
+         setContentView(R.layout.activity_sample1)
 
-            }
+         val errorButton = findViewById<Button>(R.id.button)
+         val successButton = findViewById<Button>(R.id.button2)
+         otpTextView = findViewById(R.id.otp_view) as OTPTextView
+         otpTextView.requestFocusOTP()
+         otpTextView.otpListener = object : OTPListener {
+             override fun onInteractionListener() {
 
-            override fun onOTPComplete(otp: String) {
-                Toast.makeText(this@SampleActivity1, "The OTP is $otp", Toast.LENGTH_SHORT).show()
-            }
-        }
-        errorButton.setOnClickListener { otpTextView.showError() }
-        successButton.setOnClickListener { otpTextView.showSuccess() }
-    }
-}
+             }
+
+             override fun onOTPComplete(otp: String) {
+                 Toast.makeText(this@SampleActivity1, "The OTP is $otp", Toast.LENGTH_SHORT).show()
+             }
+         }
+         errorButton.setOnClickListener { otpTextView.showError() }
+         successButton.setOnClickListener { otpTextView.showSuccess() }
+
+         additionalMethods()
+     }
+
+     fun additionalMethods() {
+         otpTextView.getOtpListener();  // retrieves the current OTPListener (null if nothing is set)
+         otpTextView.requestFocusOTP();	//sets the focus to OTP box (does not open the keyboard)
+         otpTextView.setOTP(otpString);	// sets the entered otpString in the Otp box (for case when otp is retrieved from SMS)
+         otpTextView.getOTP();	// retrieves the OTP entered by user (works for partial otp input too)
+         otpTextView.showSuccess();	// shows the success state to the user (can be set a bar color or drawable)
+         otpTextView.showError();	// shows the success state to the user (can be set a bar color or drawable)
+         otpTextView.resetState();	// brings the views back to default state (the state it was at input)
+     }
+ }
 ```
 
 
