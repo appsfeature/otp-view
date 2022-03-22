@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Workspace/DroidHelios/otp-view/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Workspace/DroidHelios/otp-view/app/src/main/res/layout/activity_main2.xml" value="0.275" />
+        <entry key="..\:/Workspace/DroidHelios/otp-view/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.137" />
+        <entry key="..\:/Workspace/DroidHelios/otp-view/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.137" />
+        <entry key="..\:/Workspace/DroidHelios/otp-view/otpview/src/main/res/drawable/bg_otp_box.xml" value="0.1855" />
+        <entry key="..\:/Workspace/DroidHelios/otp-view/otpview/src/main/res/drawable/bg_otp_box_active.xml" value="0.1855" />
+        <entry key="..\:/Workspace/DroidHelios/otp-view/otpview/src/main/res/drawable/bg_otp_box_error.xml" value="0.1855" />
+        <entry key="..\:/Workspace/DroidHelios/otp-view/otpview/src/main/res/drawable/bg_otp_box_inactive.xml" value="0.1855" />
+        <entry key="..\:/Workspace/DroidHelios/otp-view/otpview/src/main/res/drawable/bg_otp_box_success.xml" value="0.137" />
+        <entry key="..\:/Workspace/DroidHelios/otp-view/otpview/src/main/res/drawable/bg_pin.xml" value="0.1855" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

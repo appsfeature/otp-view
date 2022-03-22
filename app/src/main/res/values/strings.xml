@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OTP-view</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="please_type_the_verification_code_sent_to_n_9xxxxxxx19">Please type the verification code sent to\n+9XXXXXXX19</string>
+
+
+</resources>
