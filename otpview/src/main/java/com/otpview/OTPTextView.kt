@@ -16,7 +16,7 @@ import java.util.regex.Pattern
 class OTPTextView : FrameLayout {
 
     private var itemViews: MutableList<ItemView>? = null
-    private var otpChildEditText: OTPChildEditText? = null
+    var otpEditText: OTPChildEditText? = null
     var otpListener: OTPListener? = null
 
     private var length: Int = 0
@@ -35,7 +35,7 @@ class OTPTextView : FrameLayout {
         }
 
     val otp: String?
-        get() = otpChildEditText?.text?.toString()
+        get() = otpEditText?.text?.toString()
 
     constructor(context: Context) : super(context) {
         init(null)
@@ -80,10 +80,10 @@ class OTPTextView : FrameLayout {
 
             val editTextLayoutParams = LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
             editTextLayoutParams.gravity = Gravity.CENTER
-            otpChildEditText = OTPChildEditText(context)
-            otpChildEditText?.filters = arrayOf(filter, InputFilter.LengthFilter(length))
-            setTextWatcher(otpChildEditText)
-            addView(otpChildEditText, editTextLayoutParams)
+            otpEditText = OTPChildEditText(context)
+            otpEditText?.filters = arrayOf(filter, InputFilter.LengthFilter(length))
+            setTextWatcher(otpEditText)
+            addView(otpEditText, editTextLayoutParams)
 
 
             val linearLayoutParams = LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
@@ -170,7 +170,7 @@ class OTPTextView : FrameLayout {
     }
 
     fun requestFocusOTP() {
-        otpChildEditText?.requestFocus()
+        otpEditText?.requestFocus()
     }
 
     fun showError() {
@@ -196,13 +196,13 @@ class OTPTextView : FrameLayout {
     }
 
     fun setOTP(otp: String) {
-        otpChildEditText?.setText(otp)
+        otpEditText?.setText(otp)
     }
 
     @SuppressLint("ClickableViewAccessibility")
     override fun setOnTouchListener(l: OnTouchListener) {
         super.setOnTouchListener(l)
-        otpChildEditText?.setOnTouchListener(l)
+        otpEditText?.setOnTouchListener(l)
     }
 
     companion object {

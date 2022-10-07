@@ -5,7 +5,7 @@ import android.graphics.Color
 import android.text.InputType
 import android.util.AttributeSet
 
-internal class OTPChildEditText : androidx.appcompat.widget.AppCompatEditText {
+class OTPChildEditText : androidx.appcompat.widget.AppCompatEditText {
 
     constructor(context: Context) : super(context) {
         init()
@@ -22,6 +22,7 @@ internal class OTPChildEditText : androidx.appcompat.widget.AppCompatEditText {
     private fun init() {
         isCursorVisible = false
         setTextColor(Color.TRANSPARENT)
+        textSize = 40f
         background = null
         inputType = InputType.TYPE_CLASS_NUMBER
         setSelectAllOnFocus(false)
