@@ -27,8 +27,8 @@ dependencies {
 
 ### Screenshots
 <p align="left">
-    <img src="https://raw.githubusercontent.com/appsfeature/otp-view/master/screenshots/screenshot_1.png" alt="Preview 1" width="200" />
-    <img src="https://raw.githubusercontent.com/appsfeature/otp-view/master/screenshots/screenshot_2.png" alt="Preview 1" width="200" />
+    <img src="https://raw.githubusercontent.com/appsfeature/otp-view/master/screenshots/screenshot_1.png" alt="Preview 1" width="250" />
+    <img src="https://raw.githubusercontent.com/appsfeature/otp-view/master/screenshots/screenshot_2.png" alt="Preview 1" width="250" />
 </p>
 
 ### OTP-view Usage methods
