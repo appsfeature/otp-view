@@ -1,4 +1,4 @@
-# OTP-view
+# OTP View in Android
 
 #### Library size is : Kb
   
