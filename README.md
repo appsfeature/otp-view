@@ -1,6 +1,6 @@
 # OTP View in Android
 
-#### Library size is : Kb
+#### Library size is : 13.2Kb
   
 ## Setup Project
 
@@ -21,7 +21,7 @@ Add this to your project build.gradle
 [![](https://jitpack.io/v/appsfeature/otp-view.svg)](https://jitpack.io/#appsfeature/otp-view)
 ```gradle
 dependencies {
-        implementation 'com.github.appsfeature:otp-view:1.0'
+        implementation 'com.github.appsfeature:otp-view:1.1'
 }
 ```
 
