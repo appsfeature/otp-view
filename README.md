@@ -134,19 +134,19 @@ class MainActivity : AppCompatActivity() {
 ## ChangeLog
 
 #### Version v1.0:
+* compileSdk 33
+* JavaVersion.VERSION_1_8
 * Versions
   * plugin 'org.jetbrains.kotlin.android' version '1.7.10'
   * dependency 'androidx.core:core-ktx' version '1.9.0'
   * dependency 'androidx.appcompat:appcompat' version '1.5.1'
-* compileSdk 33
-* JavaVersion.VERSION_1_8
 
 #### Version v1.1:
-* Versions
-* * plugin 'org.jetbrains.kotlin.android' version '1.8.0'
-* * dependency 'androidx.core:core-ktx' version '1.9.0'
-* * dependency 'androidx.appcompat:appcompat' version '1.5.1'
 * compileSdk 33
 * JavaVersion.VERSION_1_8
+* Versions
+  * plugin 'org.jetbrains.kotlin.android' version '1.8.0'
+  * dependency 'androidx.core:core-ktx' version '1.9.0'
+  * dependency 'androidx.appcompat:appcompat' version '1.5.1'
 
 
