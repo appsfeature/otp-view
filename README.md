@@ -133,7 +133,7 @@ class MainActivity : AppCompatActivity() {
 
 ## ChangeLog
 
-#### Version v1.0:
+#### Version v1.0 :
 * compileSdk 33
 * JavaVersion.VERSION_1_8
 * Versions
@@ -141,7 +141,7 @@ class MainActivity : AppCompatActivity() {
   * dependency 'androidx.core:core-ktx' version '1.9.0'
   * dependency 'androidx.appcompat:appcompat' version '1.5.1'
 
-#### Version v1.1:
+#### Version v1.1 :
 * compileSdk 33
 * JavaVersion.VERSION_1_8
 * Versions
